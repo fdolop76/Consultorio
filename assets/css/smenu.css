@@ -17,17 +17,23 @@
     border-color: #007b5e;
 }
 
-section {
-    padding: 60px 0;
+body {
     
+    padding-top: 15%;
     background-color:#fff;
     background-image: url(../img/bg-image/main_background.jpg);
+    background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
+    margin: auto;
     
 }
 
+
+
 section .section-title {
+
     text-align: center;
     color: #007b5e;
     margin-bottom: 50px;
