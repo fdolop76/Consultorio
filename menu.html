@@ -3,7 +3,8 @@
 <head>
 	<title>Menu</title>
 
-	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link rel="stylesheet" type="text/css" href="assets/css/smenu.css">
@@ -16,125 +17,44 @@
 </head>
 <body>
 
-	<section>
+	<section class="container">
     <div class="container">
-        <h5 class="section-title h1">Menu</h5>
+        <h5 class="section-title h1"></h5>
         <div class="row">
             <!-- Team member -->
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="assets/img/agregar.png" alt="card image"></p>
-                                    <h4 class="card-title">Nuevo Registro</h4>
-                                    <p class="card-text">Agregar un nuevo pacieno o expediente</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Agregar Registro</h4>
-                                    <p class="card-text">Agregar el registro de un nuevo paciente o expediente a la base de datos</p>
-                                    <br>
-                                    <a href="#"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="assets/img/editar2.png" alt="card image"></p>
-                                    <h4 class="card-title">Modificar Registro</h4>
-                                    <p class="card-text">Modificar un expediente existente</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sunlimetech</h4>
-                                    <p class="card-text">Modificar datos especificos de un registro ya existente</p>
-                                    <br>
-                                    <a href="#" ><i class="fa fa-edit"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
+                <button src="assets/img/agregar.png" onclick="location='registros.html'" style="border: none; background: none;">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
                                     <p><img class=" img-fluid" src="assets/img/revisar.png" alt="card image"></p>
-                                    <h4 class="card-title">Revisar Registro</h4>
-                                    <p class="card-text">Revisar un expediente existente</p>
-                                    
+                                    <h4 class="card-title">Registros</h4>
+                                    <p class="card-text">Muestra el resgistro de los pacientes</p>
                                 </div>
                             </div>
+
                         </div>
                         <div class="backside">
                             <div class="card">
                                 <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Revisar Registro</h4>
-                                    <p class="card-text">Revisar y verificar un expediente ya existente e imprimirlo en formato pdf</p>
+                                    <h4 class="card-title">opcion 5</h4>
+                                    <p class="card-text">Descripcion larga de la opcion 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                     <br>
-                                    <a href="#"><i class="fa fa-edit"></i></a>
+                                    <a href="#"><i class="fa fa-check"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </button>
+        </div>
+                        
             <!-- ./Team member -->
             <!-- Team member -->
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="assets/img/guardar.png" alt="card image"></p>
-                                    <h4 class="card-title">Opcion 4</h4>
-                                    <p class="card-text">Descripcion corta de esta opcion</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Opcion 4</h4>
-                                    <p class="card-text">Descripcion larga de esta opcion 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <br>
-                                   <a href="#"><i class="fa fa-save"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');" >
                     <div class="mainflip">
                         <div class="frontside">
                             <div class="card">
@@ -193,6 +113,7 @@
         </div>
     </div>
 </section>
+
 <footer class="bg-black small text-center text-white-50">
 	<br>
 	
