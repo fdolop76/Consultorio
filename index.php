@@ -6,7 +6,7 @@
 	session_start();
 	
 	if(isset($_SESSION["id_usuario"])){
-		header("Location: menu,php.php");
+		header("Location: menu.php");
 	}
 	
 	if(!empty($_POST))
@@ -16,6 +16,7 @@
 		$error = '';
 		
 		$sha1_pass = sha1($password);
+
 		
 		$sql = "SELECT id, id_tipo FROM usuarios WHERE usuario = '$usuario' AND password = '$password'";
 		$result=$mysqli->query($sql);
@@ -26,7 +27,7 @@
 			$_SESSION['id_usuario'] = $row['id'];
 			$_SESSION['tipo_usuario'] = $row['id_tipo'];
 			
-			header("location: welcome.php");
+			header("location: menu.php");
 			} else {
 			$error = "El nombre o contraseña son incorrectos";
 		}
