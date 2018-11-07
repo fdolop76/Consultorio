@@ -1,19 +1,45 @@
 <<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
-body {
-  background-color:#fff;
-  background-image: url(../img/bg-image/main_background.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center center; 
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
-  font: normal 14px Roboto,arial,sans-serif;
-  
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
 }
 
-.contenedor{
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+body {
     
+    padding-top: 15%;
+    background-color:#fff;
+    background-image: url(../img/bg-image/main_background.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    
+}
+
+
+
+section .section-title {
+
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
 .form-login {
