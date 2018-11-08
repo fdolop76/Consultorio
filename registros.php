@@ -1,3 +1,11 @@
+<?php  
+session_start();
+    
+    if(isset($_SESSION["id_usuario"])){
+        
+    
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,8 +46,6 @@
 
 	<?php
 
-
-
 	$sql = $mysqli->query("SELECT * FROM paciente"); 
 	
 	?>
@@ -75,14 +81,15 @@
 					<td><?php echo $row[2]; ?></td>
 					<td><?php echo $row[3]; ?></td>
 					<td><?php echo $row[12]; ?></td>
-					<td><form style='display: inline-block;' action='editapac.php' method='POST'>
-						<input type='hidden' name='id_paciente' value=<?php echo $row[0]; ?>>
-						<button class='glyphicon glyphicon-pencil' style='background: none; border: none;' type='submit'></button>
-						</form>
-
+					<td>
 						<form style='display: inline-block;' action='eliminarpac.php' method='POST'>
 							<input type='hidden' name='id_paciente' value=<?php echo $row[0]; ?>>				 	
 				 			<button class='glyphicon glyphicon-trash' style='background: none; border: none;' type='submit'></button>
+				 		</form>
+
+				 		<form style='display: inline-block;' action='perfil.php' method='POST'>
+							<input type='hidden' name='id_paciente' value=<?php echo $row[0]; ?>>				 	
+				 			<button class='glyphicon glyphicon-user' style='background: none; border: none;' type='submit'></button>
 				 		</form>
 					</td>
 				</tr>
@@ -107,3 +114,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 </body>
 </html>
+
+<?php } else{
+    header("Location: index.php");
+} ?>
