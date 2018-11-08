@@ -1,3 +1,12 @@
+
+<?php  
+session_start();
+    
+    if(isset($_SESSION["id_usuario"])){
+        
+    
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,11 +61,11 @@
                     </div>
                     <div class="col-md-6">
                          <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="genero"  id="rh" value="masculino">
+                                <input id="rh" class="form-check-input" type="radio" name="genero" value="masculino">
                                 <label class="form-check-label" for="rh">Hombre</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="genero"  id="rm" value="femenino">
+                                <input id="rm" class="form-check-input" type="radio" name="genero" value="femenino">
                                 <label class="form-check-label" for="rm">Mujer</label>
                             </div>
                     </div>
@@ -141,3 +150,7 @@
 
 </body>
 </html>
+
+<?php } else{
+    header("Location: index.php");
+} ?>
