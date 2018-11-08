@@ -1,3 +1,14 @@
+
+<?php  
+session_start();
+    
+    if(isset($_SESSION["id_usuario"])){
+        
+    
+?>
+
+
+
 <?php 
 require 'conexion.php';
 if (!$mysqli) {
@@ -12,8 +23,8 @@ if (!$mysqli) {
 	echo $domicilio = $_POST['domicilio'];
 	echo $telefono = $_POST['nfono'];
 	echo $religion = $_POST['religion'];
-	echo $educacion = $_POST['fnac'];
-	echo $correo = $_POST['educacion'];
+	echo $educacion = $_POST['educacion'];
+	echo $correo = $_POST['correo'];
 	echo $tipo = $_POST['tipo'];
 	echo $ecivil = $_POST['ecivil'];
 	echo $tutor = $_POST['tutor'];
@@ -40,3 +51,7 @@ $qVerificar = "SELECT * from paciente where nombre = '$nombre' and apellido = '$
 	}
 }
  ?>
+
+ <?php } else{
+    header("Location: index.php");
+} ?>
